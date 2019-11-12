@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <title>Торты на заказ</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="outlines.css">
 </head>
 <body lang="ru" class="background">
 <header>
   <h2>Cakes</h2>
-
   <nav>
     <ul>
       <li><a href="#ourcakes">Наши торты</a></li>
@@ -17,7 +17,7 @@
       <li><a href="#howtoorder">Как заказть</a></li>
       <li><a href="#contacts">Контакты</a></li>
     </ul>
-    <a href="tel:+7 906 899 92 96	">+7 906 899 92 96</a>
+    <a href="tel:+7 906 899 92 96">+7 906 899 92 96</a>
   </nav>
 
   <section>
@@ -42,92 +42,105 @@
       <a href="classic">
       <h3>Классические</h3>
         <span>24 вида</span>
+      </a>
       <button>Смотреть</button>
       <button>"стрелка вправо"</button>
-      </a>
     </li>
     <li>
       <a href="mousse">
       <h3>Муссовые</h3>
         <span>12 видов</span>
-      <button>"стрелка вправо"</button>
       </a>
+      <button>"стрелка вправо"</button>
     </li>
     <li>
       <a href="wedding">
       <h3>Свадебные</h3>
         <span>20 видов</span>
-      <button>"стрелка вправо"</button>
       </a>
+      <button>"стрелка вправо"</button>
     </li>
     <li>
       <a href="for men">
       <h3>Мужчинам</h3>
         <span>12 видов</span>
-      <button>"стрелка вправо"</button>
       </a>
+      <button>"стрелка вправо"</button>
     </li>
     <li>
       <a href="childlike">
       <h3>Детские</h3>
         <span>18 видов</span>
-      <button>"стрелка вправо"</button>
       </a>
+      <button>"стрелка вправо"</button>
     </li>
     <li>
       <a href="cakes for women">
       <h3>Женщинам</h3>
         <span>16 видов</span>
-      <button>"стрелка вправо"</button>
       </a>
+      <button>"стрелка вправо"</button>
     </li>
   </ul>
 </section>
 
- <section>
-   <h2 id="individualoder">Индивидуальный заказ</h2>
-   <p>Соберите торт в три шага</p>
-   <h3>01 Выберите начинку</h3>
-   <b>Шоколадный ганаш</b>
-   <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-   <b>1000 руб/кг</b>
-   <button>выбрать</button>
-   кнопки "влево" и "вправо"
- </section>
+<section>
+  <h2 id="individualoder">Индивидуальный заказ</h2>
+  <p>Соберите торт в три шага</p>
+  <section>
+    <h3>01 Выберите начинку</h3>
+    <b>Шоколадный ганаш</b>
+    <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+    <b>1000 руб/кг</b>
+    <button>выбрать</button>
+    кнопки "влево" и "вправо"
+  </section>
 
-    <section>
-      <h3>02 Размер</h3>
-      <ul>
-        <li>
-          <p>17-18 см(1 кг – 6 персон)</p>
-        </li>
-        <li>
-          <p>23-24 см(10–12 персон)</p>
-        </li>
-        <li>
-          <p>Два яруса 25 и 20 см(15–20 персон)</p>
-        </li>
-        <li>
-          <p>Три яруса 30,25 и 18 см(25–30 персон)</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <div>
-        <h3>03 Оформление</h3>
-        <button>влево</button>
-        <p>Ягодное ассорти</p>
-        <p><b>700 руб/кг</b></p>
-        <p>Маршмэллоу</p>
-        <p><b>600 руб/кг</b></p>
-        <button>вправо</button>
-        <span>2/35</span>
-      </div>
-      <div>
-        <h3>Ваш выбор</h3>
-        ...
-      </div>
-    </section>
+  <section>
+    <h3>02 Размер</h3>
+    <button>
+      <span>17-18 см (1 кг – 6 персон)</span>
+    </button>
+    <button>
+      <span>23-24 см (10–12 персон)</span>
+    </button>
+    <button>
+      <span>Два яруса 25 и 20 см (15–20 персон)</span>
+    </button>
+    <button>
+      <span>Три яруса 30,25 и 18 см (25–30 персон)</span>
+    </button>
+  </section>
+
+  <section>
+    <div>
+      <h3>03 Оформление</h3>
+      <button>влево</button>
+      <button>
+        <span>Ягодное ассорти</span>
+        <span>700 руб/кг</span>
+      </button>
+      <button>
+        <span>Маршмэллоу</span>
+        <span>600 руб/кг</span>
+      </button>
+      <button>вправо</button>
+      <span>2/35</span>
+    </div>
+    <div>
+      <p>Ваш выбор</p>
+      <form id="order" action="#" method="post" name="order">
+        <label for="filling">Начинка</label>
+        <input type="text" name="q" placeholder="Шоколадный Ганаш" id="filling">
+        <label for="size">Размер</label>
+        <input type="text" name="q" placeholder="2 кг" id="size">
+        <label for="decor">Оформление</label>
+        <input type="text" name="q" placeholder="Маршмэллоу" id="decor">
+        <button type="submit">ЗАКАЗАТЬ ТОРТ</button>
+      </form>
+    </div>
+  </section>
+</section>
 
 <div>
   <h2 id="reviews">Отзывы</h2>
@@ -166,10 +179,8 @@
 <div>
   <h2>Наши преимущества</h2>
   <b>Почему нас выбирают?</b>
-  изображение тарелка с ягодками
   <ul>
     <li>
-      изображение веточка в красной окружности
       <h3>Без искусственных добавок</h3>
       <p>Работаем  с натуральными ингредиентами и свежими продуктами</p>
     </li>
@@ -182,7 +193,7 @@
 
 <div>
   <h2>Забота о клиентах</h2>
-  <h3>Для нас важно</h3>
+  <p>Для нас важно</p>
   <p>Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был созданисключительно для вас и для вашего события.</p>
 </div>
 
@@ -192,15 +203,15 @@
   <h2 id="howtoorder">Как заказать</h2>
   <ul>
     <li>
-      <p>1 Срок заказа<</p>
+      <p>1 Срок заказа</p>
       <p>Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
     </li>
     <li>
-      <p><b>2 Доставка по городу</b></p>
+      <p>2 Доставка по городу</p>
       <p>Доставка в пределах города 200 рублей , при заказе на сумму более 2000  доставка бесплатно.</p>
     </li>
     <li>
-      <p><b>3 Доставка за городом</b></p>
+      <p>3 Доставка за городом</p>
       <p>Доставка за пределами города рассчитываетсяиндивидуально.</p>
     </li>
   </ul>
@@ -211,18 +222,19 @@
   <h2 id="contacts">Контакты</h2>
   <b>Остались вопросы?</b>
   <p>Заполните форму ниже и наш кондитер свяжется с вами</p>
-    <div>
-      <h2>Онлайн заявка</h2>
+      <p>Онлайн заявка</p>
       <form id="contact" action="#" method="post" name="contact">
-        <input name="name" type="name" placeholder="Ваше имя">
-        <input name="email" type="email" placeholder="E-mail адрес">
-        <textarea name="question" placeholder="Ваше вопрос"></textarea>
+        <label for="name">Ваше имя</label>
+        <input name="name" type="text" placeholder="Ваше имя" id="name">
+        <label for="email">E-mail адрес</label>
+        <input name="email" type="email" placeholder="E-mail адрес" id="email">
+        <label for="question">Ваш вопрос</label>
+        <textarea name="question" placeholder="Ваш вопрос" id="question"></textarea>
         <button id="send">Отправить</button>
       </form>
-    </div>
   </section>
   <section>
-    <p>Или позвоните по телефону: <a href="tel:+7 906 899 92 96">+7 906 899 92 96</a>
+    <p>Или позвоните по телефону: <a href="tel:+7 906 899 92 96">+7 906 899 92 96</a></p>
     <p>Наша почта :<a href="mailto:bakerybypavel@mail.ru"></a></p>
     <div>
       <p>Мы в соц. сетях:</p>
